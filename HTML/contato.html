@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../CSS/estilo2.css">
+    <script src="../JAVASCRIPT/script.js"></script>
+
+</head>
+
+<body>
+
+        <main>
+            <section id="faleconosco" class="section">
+                <h2>Fale comigo</h2>
+                <p>Se você quiser entrar em contato comigo, por favor, preencha
+                    o formulário abaixo.</p>
+                    <br>
+
+                <form>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required oninput="verificarcampos()"
+                        placeholder="Seu nome aqui.">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required oninput="verificarcampos()"
+                        placeholder="Seu e-mail aqui.">
+
+                    <label for="dn">Data de nascimento:</label>
+                    <input type="date" id="datanasc" name="datanasc" required oninput="verificarcampos()">
+                    <br><br>
+                    <label for="genero">Qual seu genero?
+                    </label>
+                    <select name="genero" id="genero">
+                        <option value="0">Masculino</option>
+                        <option value="0">Feminino</option>
+                        <option value="0">Outro</option>
+                    </select>
+                   
+
+                    <div class="radio-group">
+                        <label for="tipoMensagem">Tipo de Mensagem:</label>
+                        <input type="radio" id="mensagemComum" name="tipoMensagem" value="comum" checked>
+                        <label for="mensagemComum">Mensagem Comum</label>
+                        <input type="radio" id="mensagemUrgente" name="tipoMensagem" value="urgente">
+                        <label for="mensagemUrgente">Mensagem Urgente</label>
+                    </div>
+
+                    <label for="mensagem">Seu comentário:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required oninput="verificarcampos()"
+                        placeholder="Sua dúvida/sugestão aqui."></textarea>
+
+                    <input id="enviar" onclick="btn_form()" type="submit" value="Enviar">
+                </form>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
